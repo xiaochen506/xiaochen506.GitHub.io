@@ -1,0 +1,357 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>git使用 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../docker使用/docker.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="git.html">
+            
+                <a href="git.html">
+            
+                    
+                    git使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../docker使用/docker.html">
+            
+                <a href="../docker使用/docker.html">
+            
+                    
+                    docker使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../linux使用/">
+            
+                <a href="../linux使用/">
+            
+                    
+                    linux使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../linux使用/文件基本属性.html">
+            
+                <a href="../linux使用/文件基本属性.html">
+            
+                    
+                    文件基本属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../linux使用/文件目录操作.html">
+            
+                <a href="../linux使用/文件目录操作.html">
+            
+                    
+                    文件目录操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../linux使用/用户和用户组管理.html">
+            
+                <a href="../linux使用/用户和用户组管理.html">
+            
+                    
+                    用户和用户组管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >git使用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="git&#x57FA;&#x672C;&#x64CD;&#x4F5C;">git&#x57FA;&#x672C;&#x64CD;&#x4F5C;</h1>
+<hr>
+<h3 id="1-&#x57FA;&#x4E8E;&#x8FDC;&#x7AEF;&#x5EFA;&#x7ACB;&#x5206;&#x652F;">1. &#x57FA;&#x4E8E;&#x8FDC;&#x7AEF;&#x5EFA;&#x7ACB;&#x5206;&#x652F;</h3>
+<pre><code class="lang-shell"># &#x57FA;&#x4E8E;&#x8FDC;&#x7AEF;master&#x521B;&#x5EFA;&#x5206;&#x652F;new_branch
+git checkout -b new_branch origin/master
+</code></pre>
+<h3 id="2-rebase">2. rebase</h3>
+<p>&#x591A;&#x4EBA;&#x5408;&#x4F5C;&#x5F00;&#x53D1;&#x65F6;&#xFF0C;&#x6BCF;&#x4E2A;&#x4EBA;&#x90FD;&#x4F1A;&#x4E0D;&#x65AD;&#x7684;merge&#x5230;feature&#x5206;&#x652F;&#x4E0A;&#xFF0C;&#x4E3A;&#x4E86;&#x89C4;&#x907F;&#x843D;&#x540E;&#x7684;&#x63D0;&#x4EA4;&#x8986;&#x76D6;&#x6389;&#x5148;&#x524D;&#x7684;&#x63D0;&#x4EA4;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x5728;push&#x524D;&#x5148;&#x6267;&#x884C;rebase&#x64CD;&#x4F5C;&#x3002;</p>
+<pre><code>git add -A
+git commit -m &quot;&#x5907;&#x6CE8;&#x8981;&#x6709;&#x70B9;&#x610F;&#x4E49;&#xFF0C;&#x522B;&#x778E;&#x5199;&#x3002;&quot;
+git pull --rebase # &#x6B64;&#x64CD;&#x4F5C;&#x4F1A;&#x62C9;&#x53D6;&#x8FDC;&#x7AEF;&#x4EE3;&#x7801;&#xFF0C;&#x5E76;&#x5C06;&#x4E0A;&#x9762;&#x7684;commit&#x653E;&#x5230;&#x4ED3;&#x5E93;&#x672B;&#x5C3E;&#xFF1B;&#x7406;&#x89E3;&#x6210;&#x540C;&#x6B65;&#x5230;&#x6700;&#x65B0;&#x5C31;&#x53EF;&#x4EE5;&#x3002;
+git push
+</code></pre><blockquote>
+<p>&#x6CE8;:git pull --rebase&#x53EF;&#x80FD;&#x4F1A;&#x5F15;&#x8D77;&#x51B2;&#x7A81;&#xFF0C;&#x6BD4;&#x5982;&#x522B;&#x4EBA;&#x548C;&#x81EA;&#x5DF1;&#x90FD;&#x4FEE;&#x6539;&#x4E86;&#x67D0;&#x6BB5;&#x4EE3;&#x7801;&#xFF0C;&#x8FD9;&#x65F6;&#x9700;&#x8981;&#x5148;&#x89E3;&#x51B3;&#x51B2;&#x7A81;&#x7136;&#x540E;&#x5728;git push</p>
+</blockquote>
+<h3 id="3-&#x4FEE;&#x6539;&#x8FDC;&#x7AEF;&#x6307;&#x5411;">3. &#x4FEE;&#x6539;&#x8FDC;&#x7AEF;&#x6307;&#x5411;</h3>
+<p>&#x6BD4;&#x5982;&#x672C;&#x5730;&#x5206;&#x652F;&#x662F;&#x57FA;&#x4E8E;origin/master&#x62C9;&#x53D6;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x5230;&#x6307;&#x5411;&#x4E3A;origin/feature1&#x6765;&#x62C9;&#x53D6;&#x6700;&#x65B0;&#x4EE3;&#x7801;</p>
+<pre><code>git branch -u origin/feature1
+git pull --rebase
+</code></pre><h3 id="4-&#x5F00;&#x53D1;&#x6D41;&#x7A0B;">4. &#x5F00;&#x53D1;&#x6D41;&#x7A0B;</h3>
+<ul>
+<li>&#x521B;&#x5EFA;&#x81EA;&#x5DF1;&#x7684;&#x5206;&#x652F;</li>
+<li>&#x5F00;&#x53D1;&#x540E;push&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x5206;&#x652F;&#x4E0A;</li>
+<li>Merge Request&#x5230;feature&#x5206;&#x652F;&#x4E0A;&#x5F85;&#x6D4B;&#x8BD5;</li>
+<li>feature&#x5206;&#x652F;Merge Request&#x5230;master&#x4E0A;&#x5F85;&#x53D1;&#x5E03;</li>
+</ul>
+<h3 id="5-rebase&#x89E3;&#x51B3;&#x51B2;&#x7A81;">5. rebase&#x89E3;&#x51B3;&#x51B2;&#x7A81;</h3>
+<p>git pull --rebase &#x51B2;&#x7A81; # &#x6BD4;&#x5982;xx.go&#x6587;&#x4EF6;&#x51B2;&#x7A81;</p>
+<pre><code>    a)  &#x5728;ide&#x91CC;&#x9762;&#x89E3;&#x51B3;xx.go&#x6587;&#x4EF6;&#x51B2;&#x7A81; 
+    b)  git add xx.go
+    c)  git rebase --continue
+    &#x4E0D;&#x65AD;&#x91CD;&#x590D;abc&#x4E09;&#x6B65;&#x76F4;&#x5230;&#x6CA1;&#x6709;&#x51B2;&#x7A81;
+</code></pre><h3 id="6-cherry-pick">6. cherry-pick</h3>
+<p>&#x5355;&#x72EC;&#x6458;&#x53D6;&#x67D0;&#x4E00;&#x4E2A;commit&#x5230;&#x672C;&#x5206;&#x652F;</p>
+<pre><code>git cherry-pick -x 7ad110fa
+git push
+</code></pre><h3 id="7-&#x5F3A;&#x5236;&#x8986;&#x76D6;&#x672C;&#x5730;&#x4EE3;&#x7801;">7. &#x5F3A;&#x5236;&#x8986;&#x76D6;&#x672C;&#x5730;&#x4EE3;&#x7801;</h3>
+<pre><code>git fetch --all &amp;&amp; git reset --hard origin/master &amp;&amp; git pull
+</code></pre><h3 id="8-&#x672C;&#x5730;&#x5206;&#x652F;&#x8DDF;&#x8FDC;&#x7AEF;&#x5206;&#x652F;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;">8. &#x672C;&#x5730;&#x5206;&#x652F;&#x8DDF;&#x8FDC;&#x7AEF;&#x5206;&#x652F;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;</h3>
+<pre><code>git branch -vv
+</code></pre><footer class="page-footer"><span class="copyright">Copyright all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-10-10 13:40:35
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../docker使用/docker.html" class="navigation navigation-next " aria-label="Next page: docker使用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"git使用","level":"1.2","depth":1,"next":{"title":"docker使用","level":"1.3","depth":1,"path":"docker使用/docker.md","ref":"docker使用/docker.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","-highlight","tbfed-pagefooter"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"emphasize":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"}},"file":{"path":"git使用/git.md","mtime":"2020-10-10T05:40:35.934Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-12T03:00:04.796Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
